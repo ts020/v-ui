@@ -2,16 +2,12 @@ var path = require('path')
 var webpack = require('webpack')
 
 module.exports = {
-  entry: {
-	  "./index" : './src/main.js',
-	  "./dist/dev" : "./src/dev.js"
+  entry: './src/main.js',
+  output: {
+    path: './dist',
+    publicPath: 'dist/',
+    filename: 'index.js'
   },
-	output: {
-		path: './',
-		filename: "[name].js",
-		library: ["v-ui"],
-		libraryTarget: "umd"
-	},
   resolveLoader: {
     root: path.join(__dirname, 'node_modules'),
   },
