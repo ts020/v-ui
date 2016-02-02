@@ -2,7 +2,7 @@
   "name": "v-ui",
   "description": "ui components built with Vue.js",
   "author": "takanori sugawara <takanori.sugawara@gmail.com>",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "scripts": {
     "dev": "webpack-dev-server --inline --hot",
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
