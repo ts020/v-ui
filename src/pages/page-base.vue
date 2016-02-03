@@ -24,7 +24,7 @@
 <script lang="babel" type="text/ecmascript-6">
     export default {
         components : {
-            "md-toolbar" : require("./md-toolbar.vue"),
+            "md-toolbar" : require("./../../components/md-toolbar.vue"),
             block : require("../../components/block.vue")
         }
     }

@@ -7,7 +7,7 @@
 </template>
 <!--suppress CssInvalidPropertyValue -->
 <style lang="stylus" type="text/stylus" scoped>
-    @import "../../style/_val.styl";
+    @import "../style/_val.styl";
     .md-toolbar {
         background-color: gray-color;
         overflow: hidden;
