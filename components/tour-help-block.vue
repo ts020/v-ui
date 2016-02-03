@@ -11,8 +11,8 @@
 	</div>
 </template>
 <script lang="babel" type="text/ecmascript">
-	import Rect from "../lib/geom/Rect"
-	import Path from "../lib/svg/Path"
+	import Rect from "./lib/geom/Rect"
+	import Path from "./lib/svg/Path"
 	export default {
 		props: ["isShow", "index", "rectList", "currentRect"],
 		attached () {

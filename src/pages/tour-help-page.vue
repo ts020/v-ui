@@ -18,7 +18,7 @@
 </style>
 
 <script lang="babel">
-    import Rect from "../../lib/geom/Rect"
+    import Rect from "../../components/lib/geom/Rect"
     export default {
         props : ["rects"],
         attached (){

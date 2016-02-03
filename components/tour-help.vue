@@ -72,7 +72,7 @@
 
 </style>
 <script lang="babel">
-    import Rect from "../lib/geom/Rect"
+    import Rect from "./lib/geom/Rect"
     export default {
         props : ["target"],
 		created () {
