@@ -2,11 +2,15 @@ var path = require('path')
 var webpack = require('webpack')
 
 module.exports = {
-  entry: './src/main.js',
+  entry: {
+      "./dev":'./src/main.js',
+      "./index":"./src/index.js"
+  },
   output: {
-    path: './dist',
-    publicPath: 'dist/',
-    filename: 'index.js'
+    path: './',
+    filename: "[name].js",
+    library: ["VueGoogleMap"],
+    libraryTarget: "umd"
   },
   resolveLoader: {
     root: path.join(__dirname, 'node_modules'),
@@ -39,8 +43,7 @@ module.exports = {
   devServer: {
     historyApiFallback: true,
     noInfo: true
-  },
-  devtool: 'eval-source-map'
+  }
 }
 
 if (process.env.NODE_ENV === 'production') {
