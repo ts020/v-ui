@@ -4,7 +4,6 @@ var webpack = require('webpack')
 module.exports = {
   entry: {
       "./dev":'./src/main.js',
-      "./index":"./src/index.js"
   },
   output: {
     path: './',
