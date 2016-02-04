@@ -9,7 +9,7 @@ module.exports = {
   output: {
     path: './',
     filename: "[name].js",
-    library: ["VueGoogleMap"],
+    library: ["v-ui"],
     libraryTarget: "umd"
   },
   resolveLoader: {

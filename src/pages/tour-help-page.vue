@@ -18,7 +18,7 @@
 </style>
 
 <script lang="babel">
-    import Rect from "../../components/lib/geom/Rect"
+    import {Rect} from "olibe"
     export default {
         props : ["rects"],
         attached (){

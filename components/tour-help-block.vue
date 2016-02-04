@@ -11,8 +11,7 @@
 	</div>
 </template>
 <script lang="babel" type="text/ecmascript">
-	import Rect from "./lib/geom/Rect"
-	import Path from "./lib/svg/Path"
+	import {SVGPath} from "olibe"
 	export default {
 		props: ["isShow", "index", "rectList", "currentRect"],
 		attached () {
@@ -53,8 +52,8 @@
 
 		computed: {
 			pathD: function () {
-				var path = new Path();
-				path.addRect(new Rect(0, 0, window.innerWidth, window.innerHeight));
+				var path = new SVGPath();
+				path.addRect({left:0, top:0, right:window.innerWidth, bottom:window.innerHeight});
 				if (this.currentRect)
 					path.addRect(this.currentRect.rect);
 				return path.getSource();

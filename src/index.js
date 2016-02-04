@@ -1,6 +1,0 @@
-import Observer from '../components/lib/Observer'
-import QueLoader from '../components/lib/QueLoader'
-import VisitManager from '../components/lib/VisitManager'
-import ArrayUtil from '../components/lib/util/ArrayUtil'
-import Path from '../components/lib/svg/Path'
-import Rect from '../components/lib/geom/Rect'
