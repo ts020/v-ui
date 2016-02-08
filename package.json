@@ -12,6 +12,7 @@
     "url": "git@github.com:ts020/v-ui.git"
   },
   "dependencies": {
+    "highlight": "^0.2.4",
     "olibe": "git+https://github.com/ts020/olibe.git",
     "vue": "^1.0.16"
   },

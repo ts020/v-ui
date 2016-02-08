@@ -18,7 +18,7 @@
 </style>
 
 <script lang="babel">
-    import {Rect} from "olibe"
+    import Rect from "olibe/geom/Rect"
     export default {
         props : ["rects"],
         attached (){
@@ -34,12 +34,12 @@
                     message : "段落の説明"
                 },
                 {
-                    rect :Rect.domToGlobal(this.$els.p2),
+                    rect : Rect.domToGlobal(this.$els.p2),
                     title : "段落２個目",
                     message : "段落２個目の説明"
                 }
             ];
-            console.log(this.rects);
+
         },
         components : {
             "page-base" : require("./page-base.vue"),

@@ -7,12 +7,11 @@
 			</a>
 			<a v-link="{ path: '/buttons' }">buttons</a>
 			<a v-link="{ path: '/typo' }">typo</a>
-			<a v-link="{ path: '/grid' }">grid</a>
 			<a v-link="{ path: '/fit-image' }">fit image</a>
 			<a v-link="{ path: '/slider' }">slider</a>
 			<a v-link="{ path: '/drawer' }">drawer</a>
-			<a v-link="{ path: '/map' }">map</a>
 			<a v-link="{ path: '/tour-help' }">tour-help</a>
+			<a v-link="{ path: '/context-box' }">context-box</a>
 		</block>
 		<div class="main-content"><router-view></router-view></div>
 	</div>

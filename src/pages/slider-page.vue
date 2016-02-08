@@ -1,5 +1,5 @@
 <template>
-    <page-base class="slider-page">
+    <page-base v-ref:base class="slider-page" :script-source="sc" :template-source="temp">
         <h1 slot="title" class="display-1">Fit Image EXAMPLE</h1>
         <slider>
             <fit-image src="http://health.yellow-goose.com/wp/wp-content/uploads/2014/04/Momiji.jpg" valign="middle" >
@@ -24,6 +24,7 @@
 </style>
 <script lang="babel" type="text/ecmascript-6">
     export default {
+        props : ["sc", "temp"],
         components : {
             "page-base" : require("./page-base.vue"),
             "fit-image" : require("../../components/fit-image.vue"),

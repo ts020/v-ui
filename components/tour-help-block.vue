@@ -11,7 +11,7 @@
 	</div>
 </template>
 <script lang="babel" type="text/ecmascript">
-	import olibe from "olibe"
+	import Path from "olibe/svg/Path"
 	export default {
 		props: ["isShow", "index", "rectList", "currentRect"],
 		attached () {
@@ -52,11 +52,11 @@
 
 		computed: {
 			pathD: function () {
-				var path = new olibe.SVGPath();
+				var path = new Path();
 				path.addRect({left:0, top:0, right:window.innerWidth, bottom:window.innerHeight});
 				if (this.currentRect)
 					path.addRect(this.currentRect.rect);
-				return path.getSource();
+				return path.source;
 			}
 		},
 

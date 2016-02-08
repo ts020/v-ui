@@ -72,7 +72,7 @@
 
 </style>
 <script lang="babel">
-    import {Rect} from "olibe"
+    import Rect from "olibe/geom/Rect"
     export default {
         props : ["target"],
 		created () {

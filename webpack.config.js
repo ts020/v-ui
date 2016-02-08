@@ -3,13 +3,11 @@ var webpack = require('webpack')
 
 module.exports = {
   entry: {
-      "./dev":'./src/main.js',
+      "./dev":'./src/main.js'
   },
   output: {
     path: './',
-    filename: "[name].js",
-    library: ["v-ui"],
-    libraryTarget: "umd"
+    filename: "[name].js"
   },
   resolveLoader: {
     root: path.join(__dirname, 'node_modules'),
@@ -43,7 +41,7 @@ module.exports = {
     historyApiFallback: true,
     noInfo: true
   }
-}
+};
 
 if (process.env.NODE_ENV === 'production') {
   // http://vuejs.github.io/vue-loader/workflow/production.html

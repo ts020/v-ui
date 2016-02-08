@@ -19,10 +19,30 @@
         width: 100%;
 
     }
+
+    h3 {
+        font-family: font-condensed;
+        text-transform: uppercase;
+        margin: 40px 0 0;
+        font-weight: 100;
+    }
+
 </style>
 
 <script lang="babel" type="text/ecmascript-6">
     export default {
+        watch : {
+            scriptSource : function(val, old){
+                hljs.initHighlightingOnLoad();
+            },
+            templateSource : function(val, old) {
+                hljs.initHighlightingOnLoad();
+            }
+        },
+        attached () {
+                hljs.initHighlightingOnLoad();
+
+        },
         components : {
             "md-toolbar" : require("./../../components/md-toolbar.vue"),
             block : require("../../components/block.vue")

@@ -13,9 +13,6 @@ router.map({
     '/' : {
         component: require("./pages/home-page.vue")
     },
-    '/map' : {
-        component: require("./pages/map-page.vue")
-    },
     '/drawer' : {
         component: require("./pages/drawer-page.vue")
     },
@@ -31,11 +28,11 @@ router.map({
     '/typo': {
         component: require("./pages/typo-page.vue")
     },
-    '/grid': {
-        component: require("./pages/grid-page.vue")
-    },
     '/tour-help': {
         component: require("./pages/tour-help-page.vue")
+    },
+    '/context-box': {
+        component: require("./pages/context-box-page.vue")
     }
 });
 
