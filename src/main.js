@@ -36,6 +36,9 @@ router.map({
     },
     '/remote-service': {
         component: require("./pages/remote-service-page.vue")
+    },
+    '/breadcrumb': {
+        component: require("./pages/breadcrumb-page.vue")
     }
 });
 

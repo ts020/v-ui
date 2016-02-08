@@ -13,6 +13,7 @@
 			<a v-link="{ path: '/tour-help' }">tour-help</a>
 			<a v-link="{ path: '/context-box' }">context-box</a>
 			<a v-link="{ path: '/remote-service' }">remote-service</a>
+			<a v-link="{ path: '/breadcrumb' }">breadcrumb</a>
 		</block>
 		<div class="main-content"><router-view></router-view></div>
 	</div>

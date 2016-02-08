@@ -7,8 +7,8 @@
             <input type="text" v-model="cityCode" value="400040" />
         </label>
         <button @click="$refs.service.load()">送信</button>
-        <textarea>{{response | json 4}}</textarea>
-        <remote-service v-ref:service :url="url" :response.sync="response" :query="{city:cityCode}"></remote-service>
+        <textarea>{{$refs.service.response | json 4}}</textarea>
+        <remote-service v-ref:service :url="url" :query="{city:cityCode}"></remote-service>
     </page-base>
 </template>
 <style scoped>
@@ -19,7 +19,7 @@
 </style>
 <script lang="babel" type="text/ecmascript-6">
     export default{
-        props : ["url","cityCode", "response"],
+        props : ["url","cityCode"],
         components:{
             "page-base" : require("./page-base.vue"),
             'remote-service': require("../../components/remote-service.vue")
