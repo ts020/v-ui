@@ -33,6 +33,9 @@ router.map({
     },
     '/context-box': {
         component: require("./pages/context-box-page.vue")
+    },
+    '/remote-service': {
+        component: require("./pages/remote-service-page.vue")
     }
 });
 

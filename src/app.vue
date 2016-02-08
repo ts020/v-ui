@@ -12,6 +12,7 @@
 			<a v-link="{ path: '/drawer' }">drawer</a>
 			<a v-link="{ path: '/tour-help' }">tour-help</a>
 			<a v-link="{ path: '/context-box' }">context-box</a>
+			<a v-link="{ path: '/remote-service' }">remote-service</a>
 		</block>
 		<div class="main-content"><router-view></router-view></div>
 	</div>
