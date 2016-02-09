@@ -31,18 +31,6 @@
 
 <script lang="babel" type="text/ecmascript-6">
     export default {
-        watch : {
-            scriptSource : function(val, old){
-                hljs.initHighlightingOnLoad();
-            },
-            templateSource : function(val, old) {
-                hljs.initHighlightingOnLoad();
-            }
-        },
-        attached () {
-                hljs.initHighlightingOnLoad();
-
-        },
         components : {
             "md-toolbar" : require("./../../components/md-toolbar.vue"),
             block : require("../../components/block.vue")
