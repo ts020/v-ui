@@ -6,4 +6,4 @@
 npm install v-ui
 ```
 
-<a href="https://github.com/ts020/v-ui">https://github.com/ts020/v-ui/</a>
+<a href="ts020.github.io/v-ui/">ts020.github.io/v-ui/</a>
