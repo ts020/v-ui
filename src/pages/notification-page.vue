@@ -9,11 +9,6 @@
         </page-base>
     </div>
 </template>
-<style scoped>
-    h1 {
-        line-height: 72px;
-    }
-</style>
 <script lang="babel" type="text/ecmascript-6">
     import Rect from "olibe/geom/Rect"
     export default {

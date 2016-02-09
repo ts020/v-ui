@@ -11,10 +11,6 @@
     </page-base>
 </template>
 <style scoped lang="stylus">
-    h1 {
-        line-height: 72px;
-    }
-
     .fit-image {
         height: 300px;
     }

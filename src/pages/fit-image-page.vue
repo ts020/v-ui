@@ -11,10 +11,6 @@
     </div>
 </template>
 <style scoped lang="stylus">
-    h1 {
-        line-height: 72px;
-    }
-
     .fit-image {
         height: 200px;
     }

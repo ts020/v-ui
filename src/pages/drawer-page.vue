@@ -20,10 +20,6 @@
     </div>
 </template>
 <style scoped>
-    h1 {
-        line-height: 72px;
-    }
-
     .box-list li {
         list-style: none;
     }
