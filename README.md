@@ -1,18 +1,9 @@
 # v-ui
 
-> components built with Vue.js
-
-## Build Setup
+> components with Vue.js
 
 ``` bash
-# install dependencies
-npm install
-
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
+npm install v-ui
 ```
 
-For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
+<a href="https://github.com/ts020/v-ui">https://github.com/ts020/v-ui/</a>

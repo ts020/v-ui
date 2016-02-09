@@ -36,5 +36,6 @@
     "vue-style-loader": "^1.0.0",
     "webpack": "^1.12.12",
     "webpack-dev-server": "^1.14.1"
-  }
+  },
+  "license" : "MIT"
 }

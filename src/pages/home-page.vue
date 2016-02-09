@@ -3,7 +3,7 @@
         <h1 class="display-1" slot="title">Introduction</h1>
         <div class="repository">
             <h6>github</h6>
-            <a href="https://github.com/ts020/vue-loader-example">https://github.com/ts020/vue-loader-example/</a>
+            <a href="https://github.com/ts020/v-ui">https://github.com/ts020/v-ui/</a>
         </div>
     </page-base>
 </template>

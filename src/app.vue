@@ -3,7 +3,7 @@
 		<block class="main-menu">
 			<a v-link="{ path: '/' }">
 				<img class="logo" src="http://jp.vuejs.org/images/logo.png" />
-				<h1 class="title">Vue Material</h1>
+				<h1 class="title">V-UI</h1>
 			</a>
 			<a v-link="{ path: '/buttons' }">buttons</a>
 			<a v-link="{ path: '/typo' }">typo</a>
