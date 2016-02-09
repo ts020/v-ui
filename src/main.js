@@ -39,6 +39,9 @@ router.map({
     },
     '/breadcrumb': {
         component: require("./pages/breadcrumb-page.vue")
+    },
+    '/notification' : {
+        component : require("./pages/notification-page.vue")
     }
 });
 

@@ -1,25 +1,32 @@
 <template>
-    <header-component/>
-    <div>this is template body</div>
-    <other-component/>
+    <div class="buttons-page">
+        <page-base>
+            <h1 slot="title" class="display-1">Notification EXAMPLE</h1>
+
+            <simple-button v-ref:btn @click="$refs.notification.isOpen=true">ボタン</simple-button>
+            <div v-el:koko >koko</div>
+            <notification v-ref:notification :element="$refs.btn">通知</notification>
+        </page-base>
+    </div>
 </template>
-<style>
-    body{
-        background-color:#ff0000;
+<style scoped>
+    h1 {
+        line-height: 72px;
     }
 </style>
-<script>
-    import HeaderComponent from './components/header.vue'
-    import OtherComponent from './components/other.vue'
-    export default{
-        data(){
-            return{
-                msg:'hello vue'
+<script lang="babel" type="text/ecmascript-6">
+    import Rect from "olibe/geom/Rect"
+    export default {
+        data () {
+            return {
+                btnPosition : {}
             }
         },
-        components:{
-            'other-component':OtherComponent,
-            HeaderComponent,
+
+        components : {
+            "page-base" : require("./page-base.vue"),
+            "simple-button" : require("../../components/buttons/simple-button.vue"),
+            "notification" : require("../../components/notification.vue")
         }
     }
 </script>
