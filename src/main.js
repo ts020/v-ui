@@ -2,8 +2,6 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 const app = Vue.extend(require("./app.vue"));
 
-
-
 Vue.use(VueRouter);
 // create router
 const router = new VueRouter({
@@ -42,6 +40,9 @@ router.map({
     },
     '/notification' : {
         component : require("./pages/notification-page.vue")
+    },
+    '/form' : {
+        component : require("./pages/form-page.vue")
     }
 });
 

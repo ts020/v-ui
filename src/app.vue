@@ -15,6 +15,7 @@
 			<a v-link="{ path: '/remote-service' }">remote-service</a>
 			<a v-link="{ path: '/breadcrumb' }">breadcrumb</a>
 			<a v-link="{ path: '/notification' }">notification</a>
+			<a v-link="{ path: '/form' }">form</a>
 		</block>
 		<div class="main-content"><router-view></router-view></div>
 	</div>
