@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 const app = Vue.extend(require("./app.vue"));
-
+Vue.config.debug = true;
 Vue.use(VueRouter);
 // create router
 const router = new VueRouter({
