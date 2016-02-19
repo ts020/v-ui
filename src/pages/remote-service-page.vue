@@ -7,8 +7,9 @@
             <input type="text" v-model="cityCode" value="400040" />
         </label>
         <button @click="$refs.service.load()">送信</button>
+        <div>status : {{status}}</div>
         <textarea>{{$refs.service.response | json 4}}</textarea>
-        <remote-service v-ref:service :url="url" :query="{city:cityCode}"></remote-service>
+        <remote-service v-ref:service :url="url" :query="{city:cityCode}" @complete="status='通信完了'"></remote-service>
     </page-base>
 </template>
 <style scoped>
@@ -19,6 +20,11 @@
 </style>
 <script lang="babel" type="text/ecmascript-6">
     export default{
+        data () {
+            return {
+                status : "通信中"
+            }
+        },
         props : ["url","cityCode"],
         components:{
             "page-base" : require("./page-base.vue"),

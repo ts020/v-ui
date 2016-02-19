@@ -44,6 +44,7 @@
                     }
 
                     _this.response = response.body;
+                    _this.$dispatch("complete", response.body);
                 })
             },
 
