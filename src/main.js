@@ -43,6 +43,9 @@ router.map({
     },
     '/form' : {
         component : require("./pages/form-page.vue")
+    },
+    '/icons' : {
+        component : require("./pages/icons-page.vue")
     }
 });
 
