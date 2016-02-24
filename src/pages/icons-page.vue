@@ -12,6 +12,7 @@
         </div>
     </page-base>
 </template>
+<!--suppress CssInvalidPropertyValue -->
 <style scoped lang="stylus">
     @import "../../style/_val.styl";
     .icons {

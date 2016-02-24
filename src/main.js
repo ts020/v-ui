@@ -46,6 +46,9 @@ router.map({
     },
     '/icons' : {
         component : require("./pages/icons-page.vue")
+    },
+    '/menu' : {
+        component : require("./pages/menu-page.vue")
     }
 });
 

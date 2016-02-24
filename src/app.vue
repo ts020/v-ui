@@ -17,6 +17,7 @@
 			<a v-link="{ path: '/notification' }">notification</a>
 			<a v-link="{ path: '/form' }">form</a>
             <a v-link="{ path: '/icons' }">icons</a>
+            <a v-link="{ path: '/menu' }">menu</a>
 		</block>
 		<div class="main-content"><router-view></router-view></div>
 	</div>
